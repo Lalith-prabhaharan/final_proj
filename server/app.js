@@ -24,6 +24,8 @@ app.options('*',cors());
 
 // Routes
 app.use('/api/auth', require('./routes/authRoute'));
+app.use('/api/courses',require('./routes/courseRoute'))
+app.use('/api/feedback',require('./routes/feedbackRoute'))
 
 app.listen(8000, () => {
     connect()
